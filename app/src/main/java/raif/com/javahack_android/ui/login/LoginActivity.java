@@ -50,7 +50,9 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
 
     @Override
     public void login() {
-
+        Intent intent = new Intent(LoginActivity.this, VerificationCodeActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     @Override

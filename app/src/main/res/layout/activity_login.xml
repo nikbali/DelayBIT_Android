@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.mindorks.framework.mvvm.ui.login.LoginActivity">
 
     <data>
@@ -54,6 +53,7 @@
                 android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="phone"
@@ -100,13 +100,14 @@
                     android:layout_height="0dp" />
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Phone Number"
                     android:inputType="phone"
                     android:maxLines="1"
                     android:singleLine="true"
-                    android:text="9767 0587 7834"
+                    android:text="9167232345"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                     android:textColor="@color/grey_90"
                     android:textStyle="bold" >
