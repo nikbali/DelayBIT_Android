@@ -30,7 +30,7 @@ public class DataManagerImpl implements DataManager {
                            Gson gson) {
         this.mContext = context;
         this.mDbHelper = databaseHelper;
-        this. mPreferencesHelper = preferencesHelper;
+        this.mPreferencesHelper = preferencesHelper;
         this.mGson = gson;
         this.networkHelper = networkHelper;
     }
