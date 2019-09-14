@@ -5,6 +5,7 @@ import android.app.Application;
 
 import com.androidnetworking.AndroidNetworking;
 import com.androidnetworking.interceptors.HttpLoggingInterceptor;
+
 import javax.inject.Inject;
 
 import dagger.android.DispatchingAndroidInjector;

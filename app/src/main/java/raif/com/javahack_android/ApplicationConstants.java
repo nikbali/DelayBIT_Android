@@ -6,6 +6,9 @@ public final class ApplicationConstants {
 
     public static final String PREF_NAME = "javahack_pref";
 
+
+    public static final String TIMESTAMP_FORMAT = "yyyyMMdd_HHmmss";
+
     private ApplicationConstants() {
 
     }
