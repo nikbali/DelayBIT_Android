@@ -64,7 +64,7 @@
                         android:id="@+id/image_1"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
-                        android:src="@drawable/logo_raif"
+                        android:src="@drawable/gref"
                         android:background="@color/grey_40"
                         android:scaleType="centerCrop" />
 
@@ -96,7 +96,7 @@
 
                     <ImageView
                         android:id="@+id/image_2"
-                        android:src="@drawable/logo_raif"
+                        android:src="@drawable/monin"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:background="@color/grey_40"
@@ -132,7 +132,7 @@
                         android:id="@+id/image_3"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
-                        android:src="@drawable/logo_raif"
+                        android:src="@drawable/putin"
                         android:background="@color/grey_40"
                         android:scaleType="centerCrop" />
 
@@ -202,7 +202,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:background="@color/grey_40"
-                        android:src="@drawable/logo_raif"
+                        android:src="@drawable/comp"
                         android:scaleType="centerCrop" />
 
                     <TextView
@@ -211,7 +211,7 @@
                         android:maxLines="1"
                         android:padding="@dimen/spacing_large"
                         android:singleLine="true"
-                        android:text="Красавчик Красавов"
+                        android:text="ОАО Компьютерный мир"
                         android:textAppearance="@style/TextAppearance.Medium.Bold"
                         android:textColor="@color/grey_90" />
 
@@ -235,6 +235,7 @@
                         android:id="@+id/image_4"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
+                        android:src="@drawable/miratorg"
                         android:background="@color/grey_40"
                         android:scaleType="centerCrop" />
 
@@ -244,8 +245,7 @@
                         android:maxLines="1"
                         android:padding="@dimen/spacing_large"
                         android:singleLine="true"
-                        android:src="@drawable/logo_raif"
-                        android:text="Quisque"
+                        android:text="ООО Мираторг"
                         android:textAppearance="@style/TextAppearance.Medium.Bold"
                         android:textColor="@color/grey_90" />
 
@@ -269,7 +269,7 @@
                         android:id="@+id/image_5"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
-                        android:src="@drawable/logo_raif"
+                        android:src="@drawable/empty_200"
                         android:background="@color/grey_40"
                         android:scaleType="centerCrop" />
 
@@ -279,7 +279,7 @@
                         android:maxLines="1"
                         android:padding="@dimen/spacing_large"
                         android:singleLine="true"
-                        android:text="Aliquam ac elit"
+                        android:text="ИП Другов ИВ"
                         android:textAppearance="@style/TextAppearance.Medium.Bold"
                         android:textColor="@color/grey_90" />
 
@@ -338,7 +338,7 @@
                         android:id="@+id/image_6"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
-                        android:src="@drawable/logo_raif"
+                        android:src="@drawable/empty_200"
                         android:background="@color/grey_40"
                         android:scaleType="centerCrop" />
 
@@ -372,7 +372,7 @@
                         android:id="@+id/image_7"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
-                        android:src="@drawable/logo_raif"
+                        android:src="@drawable/empty_200"
                         android:background="@color/grey_40"
                         android:scaleType="centerCrop" />
 
@@ -406,7 +406,7 @@
                         android:id="@+id/image_8"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
-                        android:src="@drawable/logo_raif"
+                        android:src="@drawable/empty_200"
                         android:background="@color/grey_40"
                         android:scaleType="centerCrop" />
 

@@ -57,7 +57,7 @@
                     android:id="@+id/image"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/empty_200"
+                    android:src="@drawable/business"
                     app:civ_shadow="true"
                     app:civ_shadow_radius="0"
                     app:civ_border="true"
@@ -75,7 +75,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/spacing_medium"
-                    android:text="ОАО Шаурма на вокзале"
+                    android:text="ОАО Велосипеды"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
                     android:textColor="@color/black" />
 

@@ -47,7 +47,8 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
 
     @Override
     public void handleError(Throwable throwable) {
-        // handle error
+
+        Toast.makeText(this, String.format("Серверная ошибка: %s", throwable.getMessage()), Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -66,11 +67,15 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
 
         } else {
             mLoginViewModel.createBusiness(inn);
-            Intent intent = new Intent(LoginActivity.this, VerificationCodeActivity.class);
-            startActivity(intent);
-            finish();
         }
 
+    }
+
+    @Override
+    public void openNextActivity() {
+        Intent intent = new Intent(LoginActivity.this, VerificationCodeActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 
@@ -80,4 +85,6 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
         mActivityLoginBinding = getViewDataBinding();
         mLoginViewModel.setNavigator(this);
     }
+
+
 }

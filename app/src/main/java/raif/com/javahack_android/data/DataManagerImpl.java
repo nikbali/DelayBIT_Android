@@ -6,7 +6,9 @@ import com.google.gson.Gson;
 
 import javax.inject.Inject;
 
+import io.reactivex.Single;
 import raif.com.javahack_android.data.database.DatabaseHelper;
+import raif.com.javahack_android.data.model.UserResponseDTO;
 import raif.com.javahack_android.data.network.NetworkHelper;
 import raif.com.javahack_android.data.preference.PreferencesHelper;
 
@@ -53,5 +55,10 @@ public class DataManagerImpl implements DataManager {
     @Override
     public void setCurrentUserName(String userName) {
 
+    }
+
+    @Override
+    public Single<UserResponseDTO> doCreateBusiness(String inn) {
+        return networkHelper.doCreateBusiness(inn);
     }
 }

@@ -6,4 +6,6 @@ public interface LoginNavigator {
 
     void createBusiness();
 
+    void openNextActivity();
+
 }
