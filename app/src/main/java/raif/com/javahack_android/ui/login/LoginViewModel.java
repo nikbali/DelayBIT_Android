@@ -17,6 +17,6 @@ public class LoginViewModel extends BaseViewModel<LoginNavigator> {
 
 
     public void onServerLoginClick() {
-        getNavigator().login();
+        getNavigator().createBusiness();
     }
 }

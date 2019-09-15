@@ -3,11 +3,13 @@ package raif.com.javahack_android.ui.login;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import raif.com.javahack_android.R;
+import raif.com.javahack_android.ui.main.MainActivity;
 
 public class VerificationCodeActivity extends AppCompatActivity {
 
@@ -16,6 +18,13 @@ public class VerificationCodeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verification_code);
         initToolbar();
+
+        Button button = (Button) findViewById(R.id.to_main);
+        button.setOnClickListener((view) ->{
+            Intent intent = new Intent(VerificationCodeActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
     }
 
     private void initToolbar() {
@@ -36,6 +45,7 @@ public class VerificationCodeActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 
 
     public void backToLogin() {

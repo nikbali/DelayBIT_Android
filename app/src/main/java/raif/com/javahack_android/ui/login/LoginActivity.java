@@ -49,16 +49,12 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
     }
 
     @Override
-    public void login() {
+    public void createBusiness() {
         Intent intent = new Intent(LoginActivity.this, VerificationCodeActivity.class);
         startActivity(intent);
         finish();
     }
 
-    @Override
-    public void openMainActivity() {
-
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

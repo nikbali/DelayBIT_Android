@@ -80,6 +80,10 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjava2Version"
     implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroidVersion"
 
+    // code generator for view
+    implementation "com.jakewharton:butterknife:$rootProject.butterKnifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnifeVersion"
+
     // swipe view
     implementation "com.mindorks:placeholderview:$rootProject.placeholderviewVersion"
 
@@ -89,4 +93,7 @@ dependencies {
     // view model
     implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.lifecycleVersion"
     annotationProcessor "androidx.lifecycle:lifecycle-compiler:$rootProject.lifecycleVersion"
+
+    // circle image view
+    implementation "com.mikhaellopez:circularimageview:$rootProject.circularimageview"
 }

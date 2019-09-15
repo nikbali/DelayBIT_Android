@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import raif.com.javahack_android.data.DataManager;
 import raif.com.javahack_android.ui.login.LoginViewModel;
+import raif.com.javahack_android.ui.main.MainViewModel;
 
 
 @Singleton
@@ -25,9 +26,17 @@ public class ViewModelProviderFactory extends ViewModelProvider.NewInstanceFacto
     public <T extends ViewModel> T create(Class<T> modelClass) {
 
         if (modelClass.isAssignableFrom(LoginViewModel.class)) {
+
+
             //noinspection unchecked
             return (T) new LoginViewModel(dataManager);
+
+        }else if(modelClass.isAssignableFrom(MainViewModel.class)){
+
+            //noinspection unchecked
+            return (T) new MainViewModel(dataManager);
         }
+
         throw new IllegalArgumentException("Unknown ViewModel class: " + modelClass.getName());
     }
 

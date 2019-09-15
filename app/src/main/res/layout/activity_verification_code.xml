@@ -135,13 +135,13 @@
 
 
             <Button
+                android:id="@+id/to_main"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginLeft="-4dp"
                 android:layout_marginRight="-4dp"
                 android:background="@drawable/btn_rounded_yelow"
                 android:text="Вперед"
-                android:onClick="@{() -> viewModel.onServerLoginClick()}"
                 android:textAllCaps="false"
                 android:textColor="@color/black" />
 

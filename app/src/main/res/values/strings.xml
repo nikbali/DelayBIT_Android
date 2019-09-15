@@ -15,7 +15,7 @@
   -->
 
 <resources>
-    <string name="app_name">MvvmApp</string>
+    <string name="app_name">Raiffeisen Business</string>
 
     <!--Toolbar menus-->
     <string name="clear">Clear</string>
