@@ -3,6 +3,8 @@ package raif.com.javahack_android.ui.login;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.widget.Toast;
 
 import javax.inject.Inject;
 
@@ -50,9 +52,25 @@ public class LoginActivity extends BaseActivity<ActivityLoginBinding, LoginViewM
 
     @Override
     public void createBusiness() {
-        Intent intent = new Intent(LoginActivity.this, VerificationCodeActivity.class);
-        startActivity(intent);
-        finish();
+        Editable innEditable = mActivityLoginBinding.inn.getText();
+        if(innEditable == null){
+            Toast.makeText(this, "Не заполнен ИНН", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        String inn = innEditable.toString();
+
+
+        if (inn.isEmpty()) {
+            Toast.makeText(this, "Не заполнен ИНН", Toast.LENGTH_SHORT).show();
+            return;
+
+        } else {
+            mLoginViewModel.createBusiness(inn);
+            Intent intent = new Intent(LoginActivity.this, VerificationCodeActivity.class);
+            startActivity(intent);
+            finish();
+        }
+
     }
 
 

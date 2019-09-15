@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProvider;
 import raif.com.javahack_android.data.DataManager;
 import raif.com.javahack_android.ui.login.LoginViewModel;
 import raif.com.javahack_android.ui.main.MainViewModel;
+import raif.com.javahack_android.ui.profile.ProfileViewModel;
 
 
 @Singleton
@@ -31,11 +32,17 @@ public class ViewModelProviderFactory extends ViewModelProvider.NewInstanceFacto
             //noinspection unchecked
             return (T) new LoginViewModel(dataManager);
 
-        }else if(modelClass.isAssignableFrom(MainViewModel.class)){
+        } else if (modelClass.isAssignableFrom(MainViewModel.class)) {
 
             //noinspection unchecked
             return (T) new MainViewModel(dataManager);
+
+        } else if (modelClass.isAssignableFrom(ProfileViewModel.class)) {
+
+            //noinspection unchecked
+            return (T) new ProfileViewModel(dataManager);
         }
+
 
         throw new IllegalArgumentException("Unknown ViewModel class: " + modelClass.getName());
     }

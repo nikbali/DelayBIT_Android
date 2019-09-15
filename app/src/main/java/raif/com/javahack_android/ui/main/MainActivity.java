@@ -16,6 +16,7 @@ import raif.com.javahack_android.R;
 import raif.com.javahack_android.databinding.ActivityMainBinding;
 import raif.com.javahack_android.ui.ViewModelProviderFactory;
 import raif.com.javahack_android.ui.base.BaseActivity;
+import raif.com.javahack_android.ui.profile.ProfileActivity;
 
 
 public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewModel> implements MainNavigation {
@@ -90,7 +91,8 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, MainViewMode
             switch (item.getItemId()) {
 
                 case R.id.nav_my_profile:
-                    Toast.makeText(this, "Профиль", Toast.LENGTH_SHORT).show();
+                    startActivity(ProfileActivity.newIntent(this));
+                    finish();
                     return true;
 
                 case R.id.nav_exit:
