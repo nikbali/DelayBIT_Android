@@ -162,4 +162,8 @@
         <item name="colorControlActivated">@color/amber_500</item>
         <item name="colorControlHighlight">@color/amber_500</item>
     </style>
+
+    <style name="TextAppearance.Medium.Bold" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>
